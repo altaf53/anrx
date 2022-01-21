@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "0ce0e8a6-7c6b-43ed-8a94-90c4b06b592a",
+		"name": "product category api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Computer\",\r\n    \"description\":\"Desktops & laptops\",\r\n    \"image\":\"https://media.istockphoto.com/vectors/desktop-computer-vector-id862739260\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updatecategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatecategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getcategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getproducts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getproducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getproduct/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getproduct",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Lenovo ideapad 3\",\r\n    \"price\":\"38000\",\r\n    \"image\":\"https://p2-ofp.static.pub/fes/cms/2021/07/20/x3ydj4as862p72og389z9qi19lxgvt730311.png\",\r\n    \"sku\":\"Laptop\",\r\n    \"category\":\"computer\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Acer Aspire\",\r\n    \"price\":\"50000\",\r\n    \"image\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo3eJ861DbTwo10CLjMtI9mNnVEvaEHsbaaA&usqp=CAU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updateproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Computer\",\r\n    \"description\":\"Desktops & laptops\",\r\n    \"image\":\"https://media.istockphoto.com/vectors/desktop-computer-vector-id862739260\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updatecategory",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updatecategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"mac\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/searchproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"searchproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Category and Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getcategoryandproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getcategoryandproduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
